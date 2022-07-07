@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: .3s;
+    font-family: 'Roboto';
+}
+
+header{
+    padding-top: 48px;
+}
+header .logo p{
+
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #8295A0;
+
+    margin-top: 15px;
+    margin-left: auto;
+}
+header .call_contact_center .phone{
+
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+
+    /* Текст */
+    color: #232323;
+}
+header .call_contact_center p{
+
+    margin: 0;
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 14px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+
+    /* Серый_легкий */
+    color: #C4C4C4;
+}
+header .call_contact_center .call_center_img {
+    width: 63px;
+    height: 89px;
+    margin-left: 13px;
+}
+header .call_contact_center .call_center_img img{
+    height: 80%;
+}
+header .icon_phone{
+    border-radius: 30px;
+    padding: 8px;
+    background: #006565;
+}
+
+@media screen and (max-width:992px) {
+
+}
+
+@media screen and (max-width:768px) {
+    header .logo{
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    header .logo p{
+        font-size: 9px;
+        margin-top: 8px;
+    }
+}
