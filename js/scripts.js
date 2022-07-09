@@ -12,4 +12,9 @@ $(document).ready(function(){
         }
         
     });
+
+    $('section.main_slider .slider').slick({
+        infinite: true,
+        dots: true,
+      });
 });

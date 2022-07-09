@@ -63,7 +63,7 @@ header .menu_burger{
     display: block;
     position: relative;
     width: 44px;
-    height: 39px;
+    height: 40px;
     z-index: 10;
 }
 header .menu_burger span{
@@ -199,13 +199,22 @@ header .menu_burger_links li a{
         margin-top: 8px;
     }
 }
-@media screen and (max-width:480px) {
-    header .icon_phone{
-        max-width: 36px;
-        max-height: 36px;
-        padding: 8px;
+@media screen and (max-width:510px) {
+    header .logo p{
+        font-size: 8px;
     }
-    header .menu_burger{
+}
+@media screen and (max-width:480px) {
+    header .logo{
+        max-width: 50%;
+    }
+    header .icon_phone{
+        width: 44px;
+        max-width: 40px;
+        max-height: 42px;
+        padding: 12px;
+    }
+    /* header .menu_burger{
         width: 30px;
         height: 20px;
     }
@@ -216,5 +225,117 @@ header .menu_burger_links li a{
     header .menu_burger::before,
     header .menu_burger::after{
         height: 3px;
-    }
+    } */
+}
+
+section.main_slider{
+    margin-top: 30px;
+}
+section.main_slider .slider{
+    width: 100%;
+}
+section.main_slider .slider_item{
+    /* min-width: 100%; */
+    padding-bottom: 100px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+section.main_slider .container{
+
+    padding: 0;
+    padding-top: 140px;
+    padding-bottom: 40px;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    border-bottom: 2px solid #ffffff60;
+}
+section.main_slider h2{
+
+    max-width: 512px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    /* or 58px */
+
+    text-transform: uppercase;
+
+}
+section.main_slider strong{
+
+    display: block;
+    max-width: 382px;
+    margin-top: 32px;
+
+    font-size: 24px;
+    line-height: 135%;
+    /* or 32px */
+
+    text-transform: uppercase;
+}
+section.main_slider p{
+
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+
+    letter-spacing: 0.03em;
+}
+section.main_slider a.btn{
+    
+    margin-top: 88px;
+    padding: 22px 56px;
+
+    background: #006565;
+
+    box-shadow: 26.0526px 39.0789px 104.211px rgba(145, 145, 145, 0.15);
+}
+section.main_slider .slick-arrow{
+    outline: none;
+    border: 0;
+    color: transparent;
+    background-image: url(/img/Arrow.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position-y: center;
+    position: absolute;
+    height: 20px;
+    left: 390px;
+    bottom: 60px;
+    z-index: 10;
+    filter: invert(0);
+    transition: .3s;
+} 
+section.main_slider .slick-arrow:hover{
+    transition: .3s;
+    filter: invert(.8);
+}
+section.main_slider .slick-next{
+    transform: rotate(180deg);
+    margin-left: 60px;
+}
+
+section.main_slider .slick-dots{
+    position: absolute;
+    display: flex;
+    right: 550px;
+    bottom: 30px;
+}
+section.main_slider .slick-dots li{
+    display: block;
+    outline: none;
+    margin-right: 15px;
+    opacity: .3;
+}
+section.main_slider .slick-dots li.slick-active{
+    opacity: 1;
+}
+
+section.main_slider .slick-dots li button{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 30px;
+    padding: 7px 13px;
 }

@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="Чумаков Игорь">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="/css/style.css">
     <title>SEO Простор</title>
 </head>
-<body>
+<strongody>
     <header>
         <div class="container">
             <div class="d-flex justify-content-between">
@@ -45,8 +46,38 @@
             </ul>
         </div>
     </header>
+    <section class="main_slider">
+        <div class="slider d-flex">
+            <div class="slider_item" style="background-image: url('/img/background_slider.png');">
+                <div class="container">
+                    <h2>Пластиковые окна от производителя</h2>
+                    <strong>ЗАПОЛНЕНИЕ СТЕКЛОПАКЕТА ИНЕРТНЫМ ГАЗОМ в подарок*</strong>
+                    <p>*Акция до 1 мая</p>
+                    <a class="btn request_form">Заявка на замер</a>
+                </div>
+            </div>
+            <div class="slider_item" style="background-image: url('/img/background_slider.png');">
+                <div class="container">
+                    <h2>Пластиковые окна от производителя</h2>
+                    <strong>ЗАПОЛНЕНИЕ СТЕКЛОПАКЕТА ИНЕРТНЫМ ГАЗОМ в подарок*</strong>
+                    <p>*Акция до 1 мая</p>
+                    <a class="btn request_form">Заявка на замер</a>
+                </div>
+            </div>
+            <div class="slider_item" style="background-image: url('/img/background_slider.png');">
+                <div class="container">
+                    <h2>Пластиковые окна от производителя</h2>
+                    <strong>ЗАПОЛНЕНИЕ СТЕКЛОПАКЕТА ИНЕРТНЫМ ГАЗОМ в подарок*</strong>
+                    <p>*Акция до 1 мая</p>
+                    <a class="btn request_form">Заявка на замер</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
 
     <script src="/js/jquery.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/js/scripts.js"></script>
 </body>
 </html>
