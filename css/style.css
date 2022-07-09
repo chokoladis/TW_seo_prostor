@@ -8,6 +8,10 @@
 header{
     padding-top: 48px;
 }
+header .container{
+    /* overflow: hidden; */
+    position: relative;
+}
 header .logo p{
 
     font-size: 15px;
@@ -50,10 +54,134 @@ header .call_contact_center .call_center_img {
 header .call_contact_center .call_center_img img{
     height: 80%;
 }
-header .icon_phone{
-    border-radius: 30px;
-    padding: 8px;
+header hr{
+    background: #E0F5F3;
+    height: 2px;
+    border: 0;
+}
+header .menu_burger{
+    display: block;
+    position: relative;
+    width: 44px;
+    height: 39px;
+    z-index: 10;
+}
+header .menu_burger span{
+    position: absolute;
+    top: 44%;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    
     background: #006565;
+}
+header .menu_burger::before,
+header .menu_burger::after{
+    content: '';
+    background: #006565;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    left: 0;
+}
+header .menu_burger::after{
+    bottom: 0;
+    transition-duration: .3s;
+    transform: rotate(0deg);
+}
+header .menu_burger::before{
+    top: 0;
+    transition-duration: .3s;
+    transform: rotate(0deg);
+}
+header .menu_burger.menuOpen span{
+    display: none;
+}
+header .menu_burger.menuOpen::after{
+    transition-duration: .3s;
+    bottom: 43%;
+    transform: rotate(-45deg);
+}
+header .menu_burger.menuOpen::before{
+    top: 42%;
+    transition-duration: .3s;
+    transform: rotate(45deg);
+}
+header .icon_phone{
+    margin-left: auto;
+    margin-right: 18px;
+    max-width: 42px;
+    max-height: 42px;
+    border-radius: 30px;
+    padding: 12px;
+    background: #006565;
+}
+
+header .links{
+    margin: 0px auto;
+    margin-top: 25px;
+    justify-content: space-between;
+    width: fit-content;
+}
+header .links li{
+    display: block;
+    cursor: pointer;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #C4C4C4;
+}
+header .links li.active,header .links li:hover{
+    border-bottom: 3px solid #006565;
+}
+header .links li:last-child{
+    padding-right: 0;
+    padding-left: 20px;
+}
+header .links a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #232323;
+}
+header .menu_burger_links{
+    position: absolute;
+    width: 60%;
+    display: flex;
+    top: -300px;
+    right: 0;
+    margin: 0;
+    padding: 62px 36px;
+    background: white;
+    padding-bottom: 42px;
+    z-index: 5;
+}
+header .menu_burger_links li{
+    display: block;
+    cursor: pointer;
+    margin-top: 14px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #C4C4C4;
+}
+header .menu_burger_links li:first-child{
+    margin-top: 0px;
+}
+header .menu_burger_links li:last-child{
+    border-bottom: 0;
+}
+header .menu_burger_links li:hover{
+    padding-left: 15px;
+    color: #006565;
+}
+header .menu_burger_links li a{
+
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #232323;
 }
 
 @media screen and (max-width:992px) {
@@ -69,5 +197,24 @@ header .icon_phone{
     header .logo p{
         font-size: 9px;
         margin-top: 8px;
+    }
+}
+@media screen and (max-width:480px) {
+    header .icon_phone{
+        max-width: 36px;
+        max-height: 36px;
+        padding: 8px;
+    }
+    header .menu_burger{
+        width: 30px;
+        height: 20px;
+    }
+    header .menu_burger span{
+        top: 9px;
+        height: 3px;
+    }
+    header .menu_burger::before,
+    header .menu_burger::after{
+        height: 3px;
     }
 }

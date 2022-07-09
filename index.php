@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <meta name="author" content="Чумаков Игорь">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
@@ -30,10 +30,23 @@
                 <div class="d-flex d-md-none icon_phone">
                     <img src="/img/phone.png" alt="">
                 </div>
+                <div class="d-flex d-md-none menu_burger">
+                   <span></span>
+                </div>
+                <ul class="d-md-none d-block menu_burger_links">
+                    <li><a>О компании</a></li>
+                    <li><a>Партнерам</a></li>
+                </ul>
             </div>
-            <hr>
-
+            <hr class="d-none d-md-block">
+            <ul class="d-none d-md-flex links">
+                <li class="active"><a>О компании</a></li>
+                <li><a>Партнерам</a></li>
+            </ul>
         </div>
     </header>
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/scripts.js"></script>
 </body>
 </html>
