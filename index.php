@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>SEO Простор</title>
 </head>
-<strongody>
+<body>
     <header>
         <div class="container">
             <div class="d-flex justify-content-between">
@@ -48,9 +48,17 @@
     </header>
     <section class="main_slider">
         <div class="slider d-flex">
+            <div class="slider_item active" style="background-image: url('/img/background_slider.png');">
+                <div class="container">
+                    <h2>Пластиковые окна от производителя 1</h2>
+                    <strong>ЗАПОЛНЕНИЕ СТЕКЛОПАКЕТА ИНЕРТНЫМ ГАЗОМ в подарок*</strong>
+                    <p>*Акция до 1 мая</p>
+                    <a class="btn request_form">Заявка на замер</a>
+                </div>
+            </div>
             <div class="slider_item" style="background-image: url('/img/background_slider.png');">
                 <div class="container">
-                    <h2>Пластиковые окна от производителя</h2>
+                    <h2>Пластиковые окна от производителя 2</h2>
                     <strong>ЗАПОЛНЕНИЕ СТЕКЛОПАКЕТА ИНЕРТНЫМ ГАЗОМ в подарок*</strong>
                     <p>*Акция до 1 мая</p>
                     <a class="btn request_form">Заявка на замер</a>
@@ -64,20 +72,25 @@
                     <a class="btn request_form">Заявка на замер</a>
                 </div>
             </div>
-            <div class="slider_item" style="background-image: url('/img/background_slider.png');">
-                <div class="container">
-                    <h2>Пластиковые окна от производителя</h2>
-                    <strong>ЗАПОЛНЕНИЕ СТЕКЛОПАКЕТА ИНЕРТНЫМ ГАЗОМ в подарок*</strong>
-                    <p>*Акция до 1 мая</p>
-                    <a class="btn request_form">Заявка на замер</a>
+        </div>
+        <div class="nav_slider">
+            <div class="container d-flex justify-content-between">
+                <div class="arrows d-flex">
+                    <a class="arrow arrow_left">
+                        <img src="/img/Arrow.png" alt="">
+                    </a>
+                    <a class="arrow arrow_right">
+                        <img src="/img/Arrow.png" alt="">
+                    </a>
                 </div>
+                <ul class="dots d-flex">
+
+                </ul>
             </div>
-            
         </div>
     </section>
 
     <script src="/js/jquery.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/js/scripts.js"></script>
 </body>
 </html>
