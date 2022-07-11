@@ -48,7 +48,9 @@
     </header>
     <section class="main_slider">
         <div class="slider d-flex">
-            <div class="slider_item active" style="background-image: url('/img/background_slider.png');">
+            <div class="slider_item active">
+                <div class="background-image" style="background-image: url('/img/background_slider.png');"></div>
+                <div class="background-gradient"></div>
                 <div class="container">
                     <h2>Пластиковые окна от производителя 1</h2>
                     <strong>ЗАПОЛНЕНИЕ СТЕКЛОПАКЕТА ИНЕРТНЫМ ГАЗОМ в подарок*</strong>
@@ -56,7 +58,9 @@
                     <a class="btn request_form">Заявка на замер</a>
                 </div>
             </div>
-            <div class="slider_item" style="background-image: url('/img/background_slider.png');">
+            <div class="slider_item">
+                <div class="background-image" style="background-image: url('/img/background_slider.png');"></div>
+                <div class="background-gradient"></div>
                 <div class="container">
                     <h2>Пластиковые окна от производителя 2</h2>
                     <strong>ЗАПОЛНЕНИЕ СТЕКЛОПАКЕТА ИНЕРТНЫМ ГАЗОМ в подарок*</strong>
@@ -64,7 +68,9 @@
                     <a class="btn request_form">Заявка на замер</a>
                 </div>
             </div>
-            <div class="slider_item" style="background-image: url('/img/background_slider.png');">
+            <div class="slider_item">
+                <div class="background-image" style="background-image: url('/img/background_slider.png');"></div>
+                <div class="background-gradient"></div>
                 <div class="container">
                     <h2>Пластиковые окна от производителя</h2>
                     <strong>ЗАПОЛНЕНИЕ СТЕКЛОПАКЕТА ИНЕРТНЫМ ГАЗОМ в подарок*</strong>
