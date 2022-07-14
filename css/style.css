@@ -426,3 +426,32 @@ section.main_slider .dots li.active{
         width: 65%;
     }
 }
+
+section.about {
+    margin-top: 77px;
+    font-family: 'Roboto';
+}
+section.about h2{
+
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 125%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #232323;
+}
+section.about ul{
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 90px auto;
+}
+section.about ul li{
+    background: #F8F8F8;
+    max-width: 30%;
+    display: block;
+}
+section.about ul li:nth-child(2){
+    background: #00A797;
+}

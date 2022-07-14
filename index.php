@@ -96,6 +96,43 @@
         </div>
     </section>
 
+    <section class="about">
+        <div class="container">
+            <h2>о компании</h2>
+            <ul>
+                <li>
+                    <div class="img">
+                        <img src="/img/2flags.png" alt="">
+                    </div>
+                    <p>Онлайн-калькулятор поможет
+                        вам подобрать нужную конфигурацию
+                        окна и определится с бюджетом;</p>
+                </li>
+                <li>
+                    <div class="img">
+                        <img src="/img/2flags.png" alt="">
+                        <div class="likes">
+                            <img src="/img/like.png" alt="">
+                            <img src="/img/like.png" alt="">
+                            <img src="/img/like.png" alt="">
+                        </div>
+                    </div>
+                    <p>Наша компания предлагает услугу «мобильный офис»
+                        - возможность заключения договора на дому или в
+                        любом удобном для вас месте;</p>
+                </li>
+                <li>
+                    <div class="img">
+                        <img src="/img/2flags.png" alt="">
+                    </div>
+                    <p>Опытные менеджеры
+                        помогут вам подобрать
+                        наиболее удачный вариант
+                        для решения ваших задач;</p>
+                </li>
+            </ul>
+        </div>
+    </section>
     <script src="/js/jquery.js"></script>
     <script src="/js/scripts.js"></script>
 </body>
