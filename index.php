@@ -103,6 +103,11 @@
                 <li>
                     <div class="img">
                         <img src="/img/2flags.png" alt="">
+                        <div class="likes">
+                            <img src="/img/like.png" alt="">
+                            <img src="/img/like.png" alt="">
+                            <img src="/img/like.png" alt="">
+                        </div>
                     </div>
                     <p>Онлайн-калькулятор поможет
                         вам подобрать нужную конфигурацию
@@ -124,6 +129,11 @@
                 <li>
                     <div class="img">
                         <img src="/img/2flags.png" alt="">
+                        <div class="likes">
+                            <img src="/img/like.png" alt="">
+                            <img src="/img/like.png" alt="">
+                            <img src="/img/like.png" alt="">
+                        </div>
                     </div>
                     <p>Опытные менеджеры
                         помогут вам подобрать

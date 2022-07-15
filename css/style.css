@@ -441,7 +441,7 @@ section.about h2{
     color: #232323;
 }
 section.about ul{
-    max-width: 90%;
+    max-width: 95%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -449,9 +449,80 @@ section.about ul{
 }
 section.about ul li{
     background: #F8F8F8;
-    max-width: 30%;
     display: block;
+    position: relative;
+    padding-left: 26px;
+    padding-right: 14px;
+    padding-bottom: 94px;
+    padding-top: 110px;
+    max-width: 29%;
+    transform: scale(1.0);
 }
-section.about ul li:nth-child(2){
+section.about ul li p{
+    max-width: 290px;
+}
+section.about ul li .likes{
+    opacity: 0;
+    bottom: 50px;
+    right: 15px;
+    position: relative;
+}
+section.about ul li::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: transparent;
+    transition: .3s;
+}
+section.about ul li:hover{
+    transform: scale(1.1);
+    max-width: 33%;
+    transition: .3s;
+}
+section.about ul li:hover .likes{
+    opacity: 1;
+}
+section.about ul li:hover p{
+    max-width: 364px;
+}
+
+section.about ul li:hover::before{
     background: #00A797;
+    opacity: 0.3;
+    transition: .3s;
+}
+section.about ul li .img > img{
+    margin-bottom: 22px;
+    max-width: 52px;
+    max-height: 33px;
+}
+
+section.about ul li:hover .img > img{
+    position: relative;
+    max-width: 78px;
+    max-height: 49px;
+}
+
+section.about ul li .likes img:first-child{
+    position: absolute;
+    top: 0;
+    top: -100px;
+    right: 0;
+    transform: scale(0.35);
+}
+section.about ul li .likes img:nth-child(2){
+    position: absolute;
+    top: 0;
+    top: -75px;
+    right: -25px;
+    transform: scale(0.5);
+}
+section.about ul li .likes img:last-child{
+    position: absolute;
+    top: 0;
+    top: -40px;
+    right: 10px;
 }
