@@ -70,4 +70,6 @@ $(document).ready(function(){
         $("section.main_slider .dots li.active").removeClass("active");
         $(this).addClass("active");
     });
+
+
 });

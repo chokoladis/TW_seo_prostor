@@ -12,7 +12,7 @@ header .container{
     /* overflow: hidden; */
     position: relative;
 }
-header .logo p{
+header .logo p,footer .logo p{
 
     font-size: 15px;
     line-height: 18px;
@@ -184,28 +184,24 @@ header .menu_burger_links li a{
     color: #232323;
 }
 
-@media screen and (max-width:992px) {
-
-}
-
 @media screen and (max-width:768px) {
-    header .logo{
+    header .logo,footer .logo{
         -ms-flex: 0 0 33.333333%;
         flex: 0 0 33.333333%;
         max-width: 33.333333%;
     }
-    header .logo p{
+    header .logo p,footer .logo p{
         font-size: 9px;
         margin-top: 8px;
     }
 }
 @media screen and (max-width:510px) {
-    header .logo p{
+    header .logo p,footer .logo {
         font-size: 8px;
     }
 }
 @media screen and (max-width:480px) {
-    header .logo{
+    header .logo,footer .logo{
         max-width: 50%;
     }
     header .icon_phone{
@@ -214,18 +210,6 @@ header .menu_burger_links li a{
         max-height: 42px;
         padding: 12px;
     }
-    /* header .menu_burger{
-        width: 30px;
-        height: 20px;
-    }
-    header .menu_burger span{
-        top: 9px;
-        height: 3px;
-    }
-    header .menu_burger::before,
-    header .menu_burger::after{
-        height: 3px;
-    } */
 }
 
 section.main_slider{
@@ -525,4 +509,43 @@ section.about ul li .likes img:last-child{
     top: 0;
     top: -40px;
     right: 10px;
+}
+
+footer{
+    border-top: 1px solid #c4c4c4;
+    padding: 86px 0px;
+}
+footer ul{
+    margin-right: 120px;
+}
+footer ul li{
+    display: block;
+}
+footer .contacts p{
+    margin: 0;
+}
+footer .contacts > p{
+    margin-bottom: 12px;
+}
+footer .contacts .contact{
+    margin-bottom: 10px;
+}
+footer .contacts img{
+    margin-right: 27px;
+}
+.copyright{
+    padding-top: 24px;
+    padding-bottom: 26px;
+    color: white;
+    font-family: 'Roboto';
+    background: #006565;
+}
+.copyright span{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0px auto;
+}
+.copyright span:first-child{
+    margin: 0;
 }

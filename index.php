@@ -46,6 +46,7 @@
             </ul>
         </div>
     </header>
+
     <section class="main_slider">
         <div class="slider d-flex">
             <div class="slider_item active">
@@ -55,7 +56,7 @@
                     <h2>Пластиковые окна от производителя 1</h2>
                     <strong>ЗАПОЛНЕНИЕ СТЕКЛОПАКЕТА ИНЕРТНЫМ ГАЗОМ в подарок*</strong>
                     <p>*Акция до 1 мая</p>
-                    <a class="btn request_form">Заявка на замер</a>
+                    <a class="btn request_form" data-bs-toggle="modal" data-bs-target="#request_form" data-bs-whatever="@mdo">Заявка на замер</a>
                 </div>
             </div>
             <div class="slider_item">
@@ -65,7 +66,7 @@
                     <h2>Пластиковые окна от производителя 2</h2>
                     <strong>ЗАПОЛНЕНИЕ СТЕКЛОПАКЕТА ИНЕРТНЫМ ГАЗОМ в подарок*</strong>
                     <p>*Акция до 1 мая</p>
-                    <a class="btn request_form">Заявка на замер</a>
+                    <a class="btn request_form" data-bs-toggle="modal" data-bs-target="#request_form" data-bs-whatever="@mdo">Заявка на замер</a>
                 </div>
             </div>
             <div class="slider_item">
@@ -75,7 +76,7 @@
                     <h2>Пластиковые окна от производителя</h2>
                     <strong>ЗАПОЛНЕНИЕ СТЕКЛОПАКЕТА ИНЕРТНЫМ ГАЗОМ в подарок*</strong>
                     <p>*Акция до 1 мая</p>
-                    <a class="btn request_form">Заявка на замер</a>
+                    <a class="btn request_form" data-bs-toggle="modal" data-bs-target="#request_form" data-bs-whatever="@mdo">Заявка на замер</a>
                 </div>
             </div>
         </div>
@@ -95,6 +96,33 @@
             </div>
         </div>
     </section>
+
+    <div class="modal fade" id="request_form" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="request_form_label">New message</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                    <label for="message-text" class="col-form-label">Message:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+            </div>
+        </div>
+    </div>
 
     <section class="about">
         <div class="container">
@@ -141,6 +169,46 @@
                         для решения ваших задач;</p>
                 </li>
             </ul>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="logo d-flex flex-column">
+                    <img src="/img/logo.png" alt="">
+                    <p>Завод светопрозрачных конструкций</p>
+                </div>
+
+                <div class="footer_nav d-flex justify-content-between">
+                    <ul>
+                        <li><a>О компании</a></li>
+                        <li><a>Партнерам</a></li>
+                    </ul>
+                    <div class="contacts">
+                        <p>Контакты</p>
+                        <div class="contact">
+                            <img src="/img/footer_phone.png" alt="">
+                            <span>8(846)212-52-53</span>
+                        </div>
+                        <div class="contact">
+                            <img src="/img/footer_mail.png" alt="">
+                            <span>абвг@gmail.com</span>
+                        </div>
+                        <div class="contact">
+                            <img src="/img/footer_home.png" alt="">
+                            <span>Самара, ул. Победы 141</span>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </footer>
+    <section class="copyright">
+        <div class="container d-flex">
+            <span>©2022</span>
+            <span>Все права защищены</span>
         </div>
     </section>
     <script src="/js/jquery.js"></script>
